@@ -1,9 +1,9 @@
 ## Installing the Chart
 
-To install the chart with the release name `my-release`:
+To install the chart with the release name `wireguard`:
 
 ```bash
-$ helm install my-release --repo https://freie-netze.org/wg-access-server wg-access-server
+$ helm install wireguard https://github.com/kolesaev/wg-access-server-chart/raw/main/wg-access-server-0.9.4.tgz
 ```
 
 The command deploys wg-access-server on the Kubernetes cluster in the default configuration. The configuration section lists the parameters that can be configured during installation.
@@ -18,10 +18,10 @@ If no admin password is set, the Chart generates a random one. You can retrieve 
 
 ## Uninstalling the Chart
 
-To uninstall/delete the my-release deployment:
+To uninstall/delete the wireguard deployment:
 
 ```bash
-$ helm delete my-release
+$ helm delete wireguard
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
